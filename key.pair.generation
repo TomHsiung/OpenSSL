@@ -1,0 +1,11 @@
+# Check algorithms
+openssl ecparam -list_curves
+
+# Generate a private key
+openssl ecparam -out server.key -name secp521r1 -genkey
+
+# Verify the name of the curve used in the private key
+openssl ecparam -in server.key -text -noout
+
+# Generate a certificate signing request (CSR)
+openssl req -new -key server.key -out server.csr -sha512
