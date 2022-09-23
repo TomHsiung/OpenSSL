@@ -1,0 +1,2 @@
+# Replenish the snakeoil key pairs
+make-ssl-cert generate-default-snakeoil --force-overwrite
