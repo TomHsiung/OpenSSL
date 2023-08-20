@@ -1,0 +1,5 @@
+# This command generates num random bytes using a cryptographically secure pseudo random number generator (CSPRNG). Encoded in base64.
+openssl rand -base64 16
+
+# This command generates num random bytes using a cryptographically secure pseudo random number generator (CSPRNG). Encoded in hex.
+openssl rand -hex 16
